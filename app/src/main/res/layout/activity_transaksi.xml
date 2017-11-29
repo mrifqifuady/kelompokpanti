@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transaksi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context="com.fuad.retrofitdonasi.ActivityTransaksi">
+    <TextView
+        android:id="@+id/tvIdTransaksi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Transaksi : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvIdDonatur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Donatur : "
+        android:layout_below="@id/tvIdTransaksi2"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvSumbangan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumbangan : "
+        android:layout_below="@id/tvIdDonatur2"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvIdPanti2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Panti : "
+        android:layout_below="@id/tvSumbangan2"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtIdTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="id transaksi"
+        android:layout_toRightOf="@+id/tvIdTransaksi2"
+        android:layout_alignBaseline="@+id/tvIdTransaksi2"/>
+    <EditText
+        android:id="@+id/edtIdDonatur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="id donatur"
+        android:layout_alignBaseline="@+id/tvIdDonatur2"
+        android:layout_alignLeft="@+id/edtIdTransaksi"/>
+    <EditText
+        android:id="@+id/edtSumbangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Sumbangan"
+        android:layout_alignBaseline="@+id/tvSumbangan2"
+        android:layout_alignLeft="@+id/edtIdTransaksi"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/edtIdPanti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Id Tiket"
+        android:layout_alignBaseline="@+id/tvIdPanti2"
+        android:layout_alignLeft="@+id/edtIdTransaksi"/>
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvIdPanti2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btInsert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"/>
+        <Button
+            android:id="@+id/btUpdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+        <Button
+            android:id="@+id/btDelete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+        <Button
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan Muncul disini"
+        android:layout_below="@+id/Linearlayout2"
+        android:textSize="20sp"
+        android:inputType="textMultiLine"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tvIdTransaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id Transaksi"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvIdDonatur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id Donatur"
+            android:textSize="15sp"
+            android:layout_below="@id/tvIdTransaksi"
+            />
+        <TextView
+            android:id="@+id/tvSumbangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Sumbangan"
+            android:textSize="15sp"
+            android:layout_below="@id/tvIdDonatur"
+            />
+        <TextView
+            android:id="@+id/tvIdPanti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id Panti"
+            android:textSize="15sp"
+            android:layout_below="@id/tvSumbangan"
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>

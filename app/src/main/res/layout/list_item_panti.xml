@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tvIdPanti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id Panti"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvNamaPanti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nama Panti"
+            android:textSize="15sp"
+            android:layout_below="@id/tvIdPanti"
+            />
+        <TextView
+            android:id="@+id/tvAlamatPanti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Alamat Panti"
+            android:textSize="15sp"
+            android:layout_below="@id/tvNamaPanti"
+            />
+        <TextView
+            android:id="@+id/tvNoTelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Telp"
+            android:textSize="15sp"
+            android:layout_below="@id/tvAlamatPanti"
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_donatur"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context="com.fuad.retrofitdonasi.ActivityDonatur">
+    <TextView
+        android:id="@+id/tvIdDonatur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Id Donatur : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvUsername2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username : "
+        android:layout_below="@id/tvIdDonatur2"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password : "
+        android:layout_below="@id/tvUsername2"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvNamaDonatur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Donatur : "
+        android:layout_below="@id/tvPassword2"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvAlamat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:layout_below="@id/tvNamaDonatur2"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edtIdDonatur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvIdDonatur2"
+        android:layout_alignBottom="@+id/tvIdDonatur2"
+        android:layout_centerHorizontal="true"
+        android:hint="id Panti" />
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nama Panti"
+        android:layout_alignBaseline="@+id/tvUsername2"
+        android:layout_alignLeft="@+id/edtIdDonatur"/>
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nama Panti"
+        android:layout_alignBaseline="@+id/tvPassword2"
+        android:layout_alignLeft="@+id/edtIdDonatur"/>
+    <EditText
+        android:id="@+id/edtNamaDonatur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Panti"
+        android:layout_alignBaseline="@+id/tvNamaDonatur2"
+        android:layout_alignLeft="@+id/edtIdDonatur" />
+    <EditText
+        android:id="@+id/edtAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="telp"
+        android:layout_alignBaseline="@+id/tvAlamat2"
+        android:layout_alignLeft="@+id/edtIdDonatur"/>
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvAlamat2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btInsert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"/>
+        <Button
+            android:id="@+id/btUpdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+        <Button
+            android:id="@+id/btDelete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+        <Button
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan Muncul disini"
+        android:layout_below="@+id/Linearlayout2"
+        android:textSize="20sp"
+        android:inputType="textMultiLine"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fuad.retrofitdonasi.MainActivity">
+
+
+    <Button
+        android:id="@+id/btGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Get Transaksi" />
+
+    <Button
+        android:id="@+id/btGetPanti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btGet"
+        android:layout_alignBottom="@+id/btGet"
+        android:layout_centerHorizontal="true"
+        android:text="Get panti" />
+
+    <Button
+        android:id="@+id/btGetDonatur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btGetPanti"
+        android:layout_alignBottom="@+id/btGetPanti"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/btGetPanti"
+        android:layout_toRightOf="@+id/btGetPanti"
+        android:text="Get Donatur" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/btGet"
+        android:layout_alignStart="@+id/btGet"
+        android:layout_below="@+id/btGet"
+        android:layout_marginTop="13dp"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
